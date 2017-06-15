@@ -5,6 +5,8 @@ import MatchWindowHeight from './shared/utilities/match-window-height.directive'
 import ChatPageComponent from './containers/chat-page/chat-page.component';
 import TeamHeaderComponent from './components/team-header/team-header.component';
 import ChannelHeaderComponent from './components/channel-header/channel-header.component';
+import ThreadListComponent from './components/thread-list/thread-list.component';
+import ThreadItemCompoent from './components/thread-item/thread-item.component';
 
 const ChatModule =
     angular
@@ -21,6 +23,8 @@ const ChatModule =
         .directive('matchWindowHeight', MatchWindowHeight)
         .component('chatPage', ChatPageComponent)
         .component('teamHeader', TeamHeaderComponent)
-        .component('channelHeader', ChannelHeaderComponent);
+        .component('channelHeader', ChannelHeaderComponent)
+        .component('threadList', ThreadListComponent)
+        .component('threadItem', ThreadItemCompoent);
 
 export default ChatModule;

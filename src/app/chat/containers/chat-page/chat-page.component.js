@@ -12,6 +12,11 @@ const ChatPageComponent = {
                 name: 'Vlad Tutunea'
             };
 
+            const auser = {
+                id: 'auser',
+                name: 'auser'
+            }
+
             this.channels = [
                 {
                     id: 'angular',
@@ -25,8 +30,18 @@ const ChatPageComponent = {
                 }
             ];
 
+            this.directMessages = [{
+                id: 'auser',
+                name: 'auser',
+                type: 'dm'
+            }];
+
             this.currentUser = eigenjoy;
             this.activeThread = this.channels[0];
+
+            this.threadSelected = $event => {
+                this.activeThread = this.channels.find(channel => Object.is(channel.id, $event.id));
+            }
         }
     }
 };
