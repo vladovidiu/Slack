@@ -7,6 +7,26 @@ const ChatPageComponent = {
         /* @ngInject */
         constructor() {
 
+            const eigenjoy = {
+                id: 'eigenjoy',
+                name: 'Vlad Tutunea'
+            };
+
+            this.channels = [
+                {
+                    id: 'angular',
+                    name: 'angular',
+                    type: 'channel'
+                },
+                {
+                    id: 'redux',
+                    name: 'redux',
+                    type: 'channel'
+                }
+            ];
+
+            this.currentUser = eigenjoy;
+            this.activeThread = this.channels[0];
         }
     }
 };
