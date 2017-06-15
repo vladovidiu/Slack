@@ -1,6 +1,7 @@
 import '../sass/styles.scss';
 import angular from 'angular';
 import RootComponent from './root.component';
+import ChatModule from './chat/chat.module';
 
 /**
  * @ngdoc module
@@ -13,6 +14,7 @@ import RootComponent from './root.component';
  **/
 const RootModule = angular
   .module('root', [
+    ChatModule.name
   ])
   .component('root', RootComponent);
 
