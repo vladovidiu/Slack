@@ -9,7 +9,7 @@ const ChatPageComponent = {
 
             const eigenjoy = {
                 id: 'eigenjoy',
-                name: 'Vlad Tutunea'
+                name: 'eigenjoy'
             };
 
             const auser = {
@@ -21,12 +21,41 @@ const ChatPageComponent = {
                 {
                     id: 'angular',
                     name: 'angular',
-                    type: 'channel'
+                    type: 'channel',
+                    messages: [
+                        {
+                            author: eigenjoy,
+                            text: 'hi',
+                            sentAt: new Date()
+                        },
+                        {
+                            author: auser,
+                            text: 'hey',
+                            sentAt: new Date()
+                        }
+                    ]
                 },
                 {
                     id: 'redux',
                     name: 'redux',
-                    type: 'channel'
+                    type: 'channel',
+                    messages: [
+                        {
+                            author: eigenjoy,
+                            text: 'React is cool',
+                            sentAt: new Date()
+                        },
+                        {
+                            author: auser,
+                            text: 'Well ... yeah',
+                            sentAt: new Date()
+                        },
+                        {
+                            author: eigenjoy,
+                            text: 'What about angular?',
+                            sentAt: new Date()
+                        }
+                    ]
                 }
             ];
 

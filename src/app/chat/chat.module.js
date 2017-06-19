@@ -7,6 +7,8 @@ import TeamHeaderComponent from './components/team-header/team-header.component'
 import ChannelHeaderComponent from './components/channel-header/channel-header.component';
 import ThreadListComponent from './components/thread-list/thread-list.component';
 import ThreadItemCompoent from './components/thread-item/thread-item.component';
+import MessagesComponent from './components/messages/messages.component';
+import MessageComponent from './components/message/message.component';
 
 const ChatModule =
     angular
@@ -25,6 +27,8 @@ const ChatModule =
         .component('teamHeader', TeamHeaderComponent)
         .component('channelHeader', ChannelHeaderComponent)
         .component('threadList', ThreadListComponent)
-        .component('threadItem', ThreadItemCompoent);
+        .component('threadItem', ThreadItemCompoent)
+        .component('messages', MessagesComponent)
+        .component('message', MessageComponent);
 
 export default ChatModule;
